@@ -27,7 +27,7 @@ include("conexion.php");
 	</nav>
 	<div class="container">
 		<div class="content">
-			<h2>Lista de aistencia</h2>
+			<h2>Lista de asistencia</h2>
 			<hr />
 			<br />
 			<div class="table-responsive">
