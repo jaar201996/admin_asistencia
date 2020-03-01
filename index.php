@@ -39,12 +39,12 @@ include("conexion.php");
                     <th>Hora Salida</th>
 				</tr>
 				<?php
-					$sql = mysqli_query($con, "SELECT * FROM asistencia ORDER BY codigo ASC");
-				if(mysqli_num_rows($sql) == 0){
+					$sql = pg_query($dbconn, "SELECT * FROM asistencia ORDER BY codigo ASC");
+				if(pg_num_rows($sql) == 0){
 					echo '<tr><td colspan="8">No hay datos.</td></tr>';
 				}else{
 					$no = 1;
-					while($row = mysqli_fetch_assoc($sql)){
+					while($row = pg_fetch_assoc($sql)){
 						echo '
 						<tr>
 							<td>'.$no.'</td>
