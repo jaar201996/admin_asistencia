@@ -39,7 +39,7 @@ include("conexion.php");
                     <th>Hora Salida</th>
 				</tr>
 				<?php
-					$sql = pg_query($dbconn, "SELECT * FROM asistencia ORDER BY codigo ASC");
+					$sql = pg_query($dbconn, "SELECT * FROM asistencias ORDER BY codigo ASC");
 				if(pg_num_rows($sql) == 0){
 					echo '<tr><td colspan="8">No hay datos.</td></tr>';
 				}else{
