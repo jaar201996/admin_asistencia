@@ -2,7 +2,7 @@
   header('Content-type:application/xls');
   header('Content-Disposition: attachment; filename=usuarios.xls');
   include("conexion.php");
-  $sql = pg_query($dbconn, "SELECT * FROM asistencia ORDER BY codigo ASC");
+  $sql = pg_query($dbconn, "SELECT * FROM asistencias ORDER BY codigo ASC");
 ?>
 
 
